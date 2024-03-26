@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+  	  margin: 0;
+   	 padding: 0;
+   	 background-image: url('background.png');
+    	background-size: cover; /* 또는 100% 100% */
+    	background-position: center;
+    	background-repeat: no-repeat;
+   	 height: 100vh; /* 전체 뷰포트 높이 */
+    	overflow-x: hidden; /* 가로 스크롤바가 생기지 않도록 설정 */
+	    font-family: Arial, sans-serif;
+            grid-template-rows: auto 1fr auto;
+	}
+
+        .navbar {
+            background-color: black;
+            color: white;
+            padding: 8px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .content {
+    	    padding: 80px 20px 20px 20px;
+    	    margin-top: 60px;
+            min-height: 500px;
+            color: black;
+        }
+        
+        .bottom-bar {
+            background-color: #333;
+            color: #888;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            /* 모바일 화면에 대한 스타일 */
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar-logo img {
+                max-width: 70%;
+            }
+
+            .navbar-links {
+                margin-top: 10px;
+            }
+            .bottom-bar {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+    <title>캘린더 허브 - CalendarHerb</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="https://www.calendarherb.com"><img src="calendarherb-logo.png" alt="Company Logo"></a>
+        </div>
+        <div class="navbar-links">
+            <a href="https://www.calendarherb.com">Home</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to our Website!</h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+    </div>
+    <div class="bottom-bar">
+        2023 © Hermitbrain Co., Ltd. All rights reserved. <a>Privacy Policy</a>
+    </div>
+
+</body>
+</html>
