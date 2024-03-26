@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>CalendarHerb - 캘린더 허브</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+  	  margin: 0;
+   	 padding: 0;
+   	 background-image: url('background.png');
+    	background-size: cover; /* 또는 100% 100% */
+    	background-position: center;
+    	background-repeat: no-repeat;
+   	 height: 100vh; /* 전체 뷰포트 높이 */
+    	overflow-x: hidden; /* 가로 스크롤바가 생기지 않도록 설정 */
+	    font-family: Arial, sans-serif;
+            grid-template-rows: auto 1fr auto;
+	}
+
+
+        .navbar {
+            background-color: black;
+            color: white;
+            padding: 8px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .content {
+	    padding: 80px 20px 20px 20px;
+	    margin-top: 60px;
+	    color: black;
+        }
+	.app-installation {
+	    color: #505050; 
+	    margin: 20px 0;
+	    text-align: center;
+	}
+
+        .download-button {
+	    display: block;
+	    margin: 0 auto; /* 중앙 정렬 */
+	    width: 270px; 
+            height: auto;
+        }
+	a.download-link {
+	    display: block;
+	    margin: 10px auto; /* 위아래로 10px 마진 추가 */
+	}
+	.reallink-icon {
+	    max-width: 100px;
+	    display: block;
+	    margin: 0 auto; /* 중앙 정렬 */
+	}
+        .reallink-title {
+	    color: #303030;
+	    font-size: 24px; 
+	    font-weight: bold; 
+	    text-align: center;
+	    margin: 10px 0; /* 위아래 여백, 필요에 따라 조정 */
+	}
+        .bottom-bar {
+            background-color: #333;
+            color: #888;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            /* 모바일 화면에 대한 스타일 */
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar-logo img {
+                max-width: 70%;
+            }
+
+            .navbar-links {
+                margin-top: 10px;
+            }
+            .bottom-bar {
+                font-size: 0.8em;
+            }
+		.content {
+		    padding: 80px 20px 20px 20px;
+		    margin-top: 60px;
+		    color: black;
+		}
+        }
+	@media screen and (min-width: 600px) and (max-width: 1023px) {
+
+	}
+	@media screen and (min-width: 1024px) {
+
+	}
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="https://www.calendarherb.com"><img src="calendarherb_logo.png" alt="Company Logo"></a>
+        </div>
+        <div class="navbar-links">
+            <a href="https://www.calendarherb.com">Home</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="content">
+	<img src="reallink_icon.png" alt="캘린더 허브 아이콘" class="reallink-icon">
+	<h2 class="reallink-title">캘린더 허브 - 공유 캘린더</h2>
+	<div class="app-installation">
+	앱이 설치되어 있지 않다면 아래의 버튼을 눌러 앱을 설치해 주세요
+	</div>
+	<a href="https://play.google.com/store/apps/details?id=com.hermitbrain.RealLinkCalendar&hl=en-US&ah=6_v7SSBZJ7YexxF8Zx2ionNAxVU" class="download-link">
+	<img src="btn_android_download.png" alt="안드로이드 다운로드" class="download-button">
+	</a>
+	<a href="" class="download-link">
+	<img src="btn_ioc_download.png" alt="IOC 다운로드" class="download-button">
+	</a>
+    </div>
+    <div class="bottom-bar">
+        2023 © Hermitbrain Co., Ltd. All rights reserved. <a href="https://www.hermitbrain.com/privacy.html" style="color: white;">Privacy Policy</a>
+    </div>
+
+<script type='text/javascript' charset='UTF-8'>
+	var inappdeny_exec_vanillajs = (callback) => {
+		if(document.readyState !== 'loading'){
+			callback();
+		}else{
+			document.addEventListener('DOMContentLoaded', callback);
+		} 
+	};
+	inappdeny_exec_vanillajs(() => { 
+		/* Do things after DOM has fully loaded */ 
+		function copytoclipboard(val){
+			var t = document.createElement("textarea");
+			document.body.appendChild(t);
+			t.value = val;
+			t.select();
+			document.execCommand('copy');
+			document.body.removeChild(t);
+		};
+		function inappbrowserout(){
+			copytoclipboard(window.location.href);
+			alert('URL주소가 복사되었습니다.\n\nSafari가 열리면 주소창을 길게 터치한 뒤, "붙여놓기 및 이동"를 누르면 정상적으로 이용하실 수 있습니다.');
+			location.href='x-web-search://?';
+		};
+
+		var useragt = navigator.userAgent.toLowerCase();
+		var target_url = location.href;
+		
+		if(useragt.match(/kakaotalk/i)){
+			
+			//카카오톡 외부브라우저로 호출
+			location.href = 'kakaotalk://web/openExternal?url='+encodeURIComponent(target_url);
+			
+		}else if(useragt.match(/line/i)){
+			
+			//라인 외부브라우저로 호출
+			if(target_url.indexOf('?') !== -1){
+				location.href = target_url+'&openExternalBrowser=1';
+			}else{
+				location.href = target_url+'?openExternalBrowser=1';
+			}
+			
+		}else if(useragt.match(/inapp|naver|snapchat|wirtschaftswoche|thunderbird|instagram|everytimeapp|whatsApp|electron|wadiz|aliapp|zumapp|iphone(.*)whale|android(.*)whale|kakaostory|band|twitter|DaumApps|DaumDevice\/mobile|FB_IAB|FB4A|FBAN|FBIOS|FBSS|trill|SamsungBrowser\/[^1]/i)){
+			
+			//그외 다른 인앱들
+			if(useragt.match(/iphone|ipad|ipod/i)){
+				
+				//아이폰은 강제로 사파리를 실행할 수 없다 ㅠㅠ
+				//모바일대응뷰포트강제설정
+				var mobile = document.createElement('meta');
+				mobile.name = 'viewport';
+				mobile.content = "width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui";
+				document.getElementsByTagName('head')[0].appendChild(mobile);
+				//노토산스폰트강제설정
+				var fonts = document.createElement('link');
+				fonts.href = 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap';
+				document.getElementsByTagName('head')[0].appendChild(fonts);
+				document.body.innerHTML = "<style>body{margin:0;padding:0;font-family: 'Noto Sans KR', sans-serif;overflow: hidden;height: 100%;}</style><h2 style='padding-top:50px; text-align:center;font-family: 'Noto Sans KR', sans-serif;'>인앱브라우저 호환문제로 인해<br />Safari로 접속해야합니다.</h2><article style='text-align:center; font-size:17px; word-break:keep-all;color:#999;'>아래 버튼을 눌러 Safari를 실행해주세요<br />Safari가 열리면, 주소창을 길게 터치한 뒤,<br />'붙여놓기 및 이동'을 누르면<br />정상적으로 이용할 수 있습니다.<br /><br /><button onclick='inappbrowserout();' style='min-width:180px;margin-top:10px;height:54px;font-weight: 700;background-color:#31408E;color:#fff;border-radius: 4px;font-size:17px;border:0;'>Safari로 열기</button></article><img style='width:70%;margin:50px 15% 0 15%' src='https://tistory3.daumcdn.net/tistory/1893869/skin/images/inappbrowserout.jpeg' />";
+			
+			}else{
+				//안드로이드는 Chrome이 설치되어있음으로 강제로 스킴실행한다.
+				location.href='intent://'+target_url.replace(/https?:\/\//i,'')+'#Intent;scheme=http;package=com.android.chrome;end';
+			}
+		}
+	});
+</script>
+</body>
+
+</html>
