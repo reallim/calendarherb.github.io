@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>캘린더 허브 - 내 일정을 공유하세요</title>
+<script src="redirect_reallink_install.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="캘린더에 초대하기">
+<meta property="og:description" content="캘린더에 참가하고 모두 함께 일정을 등록하면, 언제 어디서나 그룹 일정을 쉽게 파악할 수 있습니다.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="calendarherb_logo2.png">
+<meta property="og:site_name" content="캘린더 허브">
+<meta property="og:url" content="https://calendarherb.com/download.html">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+    <style>
+        body {
+  	  margin: 0;
+   	 padding: 0;
+   	 background-image: url('background.png');
+    	background-size: cover; /* 또는 100% 100% */
+    	background-position: center;
+    	background-repeat: no-repeat;
+   	 height: 100vh; /* 전체 뷰포트 높이 */
+    	overflow-x: hidden; /* 가로 스크롤바가 생기지 않도록 설정 */
+	    font-family: Arial, sans-serif;
+            grid-template-rows: auto 1fr auto;
+	}
+
+
+        .navbar {
+            background-color: black;
+            color: white;
+            padding: 8px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .content {
+	    padding: 80px 20px 20px 20px;
+	    margin-top: 60px;
+	    color: black;
+        }
+	.app-installation {
+	    color: #505050; 
+	    margin: 20px 0;
+	    text-align: center;
+	}
+
+        .download-button {
+	    display: block;
+	    margin: 0 auto; /* 중앙 정렬 */
+	    width: 270px; 
+            height: auto;
+        }
+	a.download-link {
+	    display: block;
+	    margin: 10px auto; /* 위아래로 10px 마진 추가 */
+	}
+	.reallink-icon {
+	    max-width: 100px;
+	    display: block;
+	    margin: 0 auto; /* 중앙 정렬 */
+	}
+        .reallink-title {
+	    color: #303030;
+	    font-size: 24px; 
+	    font-weight: bold; 
+	    text-align: center;
+	    margin: 10px 0; /* 위아래 여백, 필요에 따라 조정 */
+	}
+        .bottom-bar {
+            background-color: #333;
+            color: #888;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            /* 모바일 화면에 대한 스타일 */
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar-logo img {
+                max-width: 70%;
+            }
+
+            .navbar-links {
+                margin-top: 10px;
+            }
+            .bottom-bar {
+                font-size: 0.8em;
+            }
+		.content {
+		    padding: 80px 20px 20px 20px;
+		    margin-top: 60px;
+		    color: black;
+		}
+        }
+	@media screen and (min-width: 600px) and (max-width: 1023px) {
+
+	}
+	@media screen and (min-width: 1024px) {
+
+	}
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="https://www.calendarherb.com"><img src="calendarherb_logo.png" alt="Company Logo"></a>
+        </div>
+        <div class="navbar-links">
+            <a href="https://www.calendarherb.com">Home</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="content">
+	<img src="reallink_icon.png" alt="캘린더 허브 아이콘" class="reallink-icon">
+	<h2 class="reallink-title">캘린더 허브 - 공유 캘린더</h2>
+	<div class="app-installation">
+	앱이 설치되어 있지 않다면 아래의 버튼을 눌러 앱을 설치해 주세요
+	</div>
+	<a href="https://play.google.com/store/apps/details?id=com.hermitbrain.RealLinkCalendar&hl=en-US&ah=6_v7SSBZJ7YexxF8Zx2ionNAxVU" class="download-link">
+	<img src="btn_android_download.png" alt="안드로이드 다운로드" class="download-button">
+	</a>
+	<a href="" class="download-link">
+	<img src="btn_ioc_download.png" alt="IOC 다운로드" class="download-button">
+	</a>
+    </div>
+    <div class="bottom-bar">
+        2023 © Hermitbrain Co., Ltd. All rights reserved. <a>Privacy Policy</a>
+    </div>
+</body>
+
+</html>
