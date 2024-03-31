@@ -1,8 +1,14 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.hermitbrain.RealLinkCalendar",
-    "sha256_cert_fingerprints": ["D6:B8:4D:83:BC:9F:5C:17:A9:FA:23:5A:14:9C:48:55:CF:1D:F3:5E:95:D8:9E:EA:AC:7A:B7:8D:9E:24:41:AF"]
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.hermitbrain.RealLinkCalendar",
+      "sha256_cert_fingerprints": [
+        "D6:B8:4D:83:BC:9F:5C:17:A9:FA:23:5A:14:9C:48:55:CF:1D:F3:5E:95:D8:9E:EA:AC:7A:B7:8D:9E:24:41:AF"
+      ]
+    }
   }
-}]
+]
