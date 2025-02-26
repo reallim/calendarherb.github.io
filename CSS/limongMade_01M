@@ -1,0 +1,108 @@
+		.new_header_site .mobile_slide_menu_container.slide_open .mobile_slide_menu,
+		.new_header_site .mobile_slide_menu_container .mobile_slide_menu,
+		.admin.new_header_mode .mobile_slide_menu_container.slide_open .mobile_slide_menu,
+		.admin.new_header_mode .mobile_slide_menu_container .mobile_slide_menu {
+			background: #fff !important;
+		}
+		.new_header_site .mobile_slide_menu_container .mobile_slide_menu .viewport-nav.mobile li li ul,
+		.admin.new_header_mode .mobile_slide_menu_container .mobile_slide_menu .viewport-nav.mobile li li ul {
+			background: transparent;
+		}
+		.mobile_slide_menu_container .mobile_slide_menu .profile-area {
+			background: #000000;
+			margin-bottom:0 ;
+		}
+		.mobile_slide_menu_container .mobile_slide_menu .profile-area .member-info,
+		.mobile_slide_menu_container .mobile_slide_menu .profile-area .btn-group,
+		.mobile_slide_menu_container .mobile_slide_menu .profile-area .member-info.guest button {
+			color: #fff;
+		}
+		.mobile_slide_menu_container .mobile_slide_menu .profile-area .member-info.guest button {
+				border-color:rgb(255,255,255) ;border-color:rgba(255,255,255,0.2) ;		}
+		.mobile_slide_menu_container .viewport-nav.mobile li li a.has_child.open > span,
+		.mobile_slide_menu_container .viewport-nav.mobile li li a.has_child.open:after,
+		.mobile_slide_menu_container .viewport-nav.mobile li li a span {
+			color: #3d3d3d;
+		}
+		.mobile_slide_menu_container .viewport-nav.mobile li a {
+			color: #3d3d3d;
+			letter-spacing: 0px;
+		}
+		.mobile_slide_menu_container .viewport-nav.mobile li.use_sub_name:hover>a:not(.active)>.plain_name:before {
+			color: #3d3d3d;
+		}
+		.mobile_slide_menu_container .viewport-nav.mobile li li.use_sub_name:hover>a:not(.active)>.plain_name {
+			color: transparent;
+		}
+		.mobile_slide_menu_container .viewport-nav.mobile li li.use_sub_name:hover>a:not(.active)>.plain_name:before {
+			position: absolute;
+			color: #3d3d3d;
+			left: auto;
+			right: auto;
+		}
+		.mobile_slide_menu_container .viewport-nav.mobile li a.active-real {
+			background: #f5f5f5;
+			color: #111;
+		}
+		.mobile_slide_menu_container .viewport-nav.mobile li a.active-real span,
+		.mobile_slide_menu_container .viewport-nav.mobile li a.has_child.open.active-real span {
+			color: #111;
+		}
+		.mobile_slide_menu_container .viewport-nav.mobile li.depth-01 {
+			border-top: 1px solid #f3f3f3;
+		}
+		.mobile_slide_menu_container .viewport-nav.mobile li.depth-01:last-child {
+			border-bottom: 1px solid #f3f3f3;
+		}
+		.mobile_slide_menu_container .viewport-nav.mobile li.depth-01 ul{
+			display : none; 		}
+		.mobile_slide_menu_container .viewport-nav.mobile li.depth-01 > a {
+			font-size: 14px;
+		}
+		.mobile_slide_menu_container .viewport-nav.mobile li li a {
+			font-size: 13px !important;
+		}
+		.mobile_slide_menu_container .viewport-nav.mobile li li:last-child a,
+		.mobile_slide_menu_container .viewport-nav.mobile li li li:last-child a,
+		.mobile_slide_menu_container .viewport-nav.mobile li > ul.collapse,
+		.mobile_slide_menu_container .viewport-nav.mobile li li > ul.collapse,
+		.mobile_slide_menu_container .viewport-nav.mobile li > ul.collapsing[aria-expanded=false],
+		.mobile_slide_menu_container .viewport-nav.mobile li li > ul.collapsing[aria-expanded=false] {
+			margin-bottom : 0;
+		}
+		.mobile_slide_menu_container .viewport-nav.mobile li > ul,
+		.mobile_slide_menu_container .viewport-nav.mobile li li > ul,
+		.mobile_slide_menu_container .viewport-nav.mobile li > ul.collapse.in,
+		.mobile_slide_menu_container .viewport-nav.mobile li li > ul.collapse.in,
+		.mobile_slide_menu_container .viewport-nav.mobile li > ul.collapsing[aria-expanded=true],
+		.mobile_slide_menu_container .viewport-nav.mobile li li > ul.collapsing[aria-expanded=true] {
+			margin-bottom: 14px;
+		}
+		.mobile_slide_menu_container .viewport-nav.mobile li li li:first-child a {
+			margin-top: 0;
+		}
+				.viewport-nav.mobile li a.has_child > .toggle-btn:after {
+							font-size: 13.3px;
+					}
+		.viewport-nav.mobile li li a.has_child > .toggle-btn:after {
+							font-size: 12.35px;
+					}
+		.navbar-nav .profile-more.open .dropdown-menu li > a {
+			background: transparent;
+			color: #212121;
+			padding: 8px 16px;
+		}
+						.im-globe .globe_icon {
+			display: inline-block;
+		}
+		.im-globe .globe_square,
+		.im-globe .globe_circle {
+			display: none !important;
+		}
+				.im-mobile-slide-footer {
+			background: #fff;
+			color: #3d3d3d;
+		}
+		.im-mobile-slide-footer .btn {
+			color: #3d3d3d;
+		}
